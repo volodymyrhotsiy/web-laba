@@ -1,0 +1,35 @@
+.third-page {
+    width: 1000px;
+    height: 311;
+    background: #26353B;
+}
+
+.third-page-header {
+    font-family: Merriweather;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--greys-white, #FFF);
+    padding-top: 66px;
+}
+
+.third-page-division {
+    padding-top: 11px;
+    display: flex;
+    padding-bottom: 78px;
+}
+
+.third-page-division-left-text {
+    padding-right: 43px;
+}
+
+.third-page-division-right,
+.third-page-division-left-text {
+    display: inline-block;
+    width: 380px;
+    height: 120px;
+    font-size: 14px;
+    color: var(--greys-white, #FFF);
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.7;
+}

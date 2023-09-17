@@ -1,0 +1,15 @@
+@import url(global.css);
+
+@import url(styles.css);
+
+@import url(first-page.css);
+
+@import url(second-page.css);
+
+@import url(third-page.css);
+
+@import url(fourth-page.css);
+
+@import url(bottom-section.css);
+
+@import url(normalize.min.css);

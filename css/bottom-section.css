@@ -1,0 +1,31 @@
+.bottom-section {
+    width: 1000px;
+    height: 75px;
+    background-color: #222F33;
+}
+
+.email {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.cookies {
+    display: inline-block;
+    opacity: 0.6;
+    padding-right: 30px;
+}
+
+.privacybeleid {
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.bottom-section-flex-box {
+    padding-left: 50px;
+    width: 900px;
+    height: 75px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

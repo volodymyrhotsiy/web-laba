@@ -1,0 +1,22 @@
+body {
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.main-section {
+    margin: 0 auto;
+    max-width: 803px;
+}
+
+.center-website {
+    width: 1000px;
+    margin: 0 auto;
+}

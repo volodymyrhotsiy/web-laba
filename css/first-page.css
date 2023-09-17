@@ -1,0 +1,66 @@
+.first-page {
+    background-image: url(../images/Bitmap\ \(1\).jpg);
+    height: 571px;
+    width: 1000px;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 35px;
+    width: 808px;
+    height: 34px;
+    align-items: center;
+}
+
+.header-links-element {
+    margin-right: 40px;
+}
+
+.contact-button {
+    width: 90px;
+    height: 34px;
+    border: none;
+    border-radius: 4px;
+    background: var(--greys-white, #FFF);
+    color: #606B74;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-text-block {
+    display: inline-block;
+    width: 440px;
+    height: 183px;
+}
+
+.hero-text-block-upper {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.hero-text-block-lower {
+    font-family: Merriweather;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 12px;
+}
+
+.watch-the-movie-section {
+    display: flex;
+    align-items: center;
+    padding-left: 112px;
+}
+
+.watch-the-movie-text {
+    display: inline-block;
+}
+
+.hero-section {
+    padding-top: 115px;
+    display: flex;
+    align-items: center;
+}
