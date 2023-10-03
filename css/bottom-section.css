@@ -1,5 +1,4 @@
 .bottom-section {
-    width: 1000px;
     height: 75px;
     background-color: #222F33;
 }
@@ -18,14 +17,25 @@
 .privacybeleid {
     display: inline-block;
     opacity: 0.6;
+    padding-right: 40px;
 }
 
 .bottom-section-flex-box {
     padding-left: 50px;
-    width: 900px;
     height: 75px;
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-section-flex-box {
+        justify-content: space-evenly;
+        padding-left: 0px;
+    }
+
+    .info-links {
+        display: none;
+    }
 }

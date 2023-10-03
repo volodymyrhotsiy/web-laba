@@ -1,6 +1,5 @@
 .second-page {
     height: 399px;
-    width: 1000px;
     background-color: white;
 }
 
@@ -10,8 +9,8 @@
 
 .second-page-text-block {
     display: inline-block;
-    width: 400px;
     height: 275px;
+    width: 400px;
     padding-top: 56px;
     padding-right: 50px;
 }
@@ -33,6 +32,7 @@
 }
 
 .second-page-text-block-button {
+    cursor: pointer;
     width: 90px;
     height: 34px;
     border-radius: 4px;
@@ -42,4 +42,26 @@
     text-align: center;
     font-weight: 500;
     background-color: white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.second-page-text-block-button:hover {
+    background-color: #606B74;
+    color: white;
+}
+
+.second-page-text-block-button:active {
+    background-color: white;
+    color: #606B74;
+}
+
+@media screen and (max-width: 768px) {
+    .second-page-image-block {
+        display: none;
+    }
+
+    .second-page-text-block {
+        padding-right: 0px;
+        width: auto;
+    }
 }

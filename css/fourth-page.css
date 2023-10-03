@@ -1,5 +1,4 @@
 .fourth-page {
-    width: 1000px;
     height: 532px;
     background-color: white;
 }
@@ -17,7 +16,6 @@
 }
 
 .fount-page-section {
-    width: 155px;
     height: 93px;
 }
 
@@ -35,5 +33,16 @@
     line-height: 22px;
     color: var(--greys-light-grey, #646D70);
     height: 66px;
-    width: 155px;
+}
+
+@media screen and (max-width: 768px) {
+    .fount-page-image {
+        display: none;
+    }
+
+    .fount-page-sections {
+        row-gap: 50px;
+        padding-left: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
 }

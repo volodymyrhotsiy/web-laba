@@ -1,21 +1,21 @@
 .first-page {
     background-image: url(../images/Bitmap\ \(1\).jpg);
     height: 571px;
-    width: 1000px;
     background-size: cover;
 }
+
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 35px;
-    width: 808px;
     height: 34px;
     align-items: center;
 }
 
 .header-links-element {
+    cursor: pointer;
     margin-right: 40px;
 }
 
@@ -29,6 +29,17 @@
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #606B74;
+    color: white
+}
+
+.contact-button:active {
+    background-color: white;
+    color: #606B74;
 }
 
 .hero-text-block {
@@ -63,4 +74,118 @@
     padding-top: 115px;
     display: flex;
     align-items: center;
+}
+
+.header__menu {
+    display: none;
+    width: 25px;
+    cursor: pointer;
+}
+
+.header__menu>img {
+    max-width: 100%;
+}
+
+.header__menu-icon {
+    width: 40px;
+}
+
+.play-button {
+    cursor: pointer;
+    animation-name: scaleTheButton;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaleTheButton {
+    0% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 115%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 10;
+        background-color: white;
+    }
+
+    .first-page {
+        height: 450px;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .watch-the-movie-section {
+        display: none;
+    }
+
+    .hero-text-block-lower {
+        padding-top: 30px;
+    }
+
+    .hero-text-block {
+        padding-top: 30px;
+        width: auto;
+    }
+
+
+    .header-links {
+        background-color: white;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top left);
+        transition: clip-path 0.9s ease-in;
+        cursor: pointer;
+    }
+
+    .header-links.open {
+        clip-path: circle(1000px at top);
+    }
+
+    .header-links {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .header-links .header-links-element {
+        margin-right: 0;
+        padding-top: 10vh;
+        flex: 1;
+    }
+
+    .header-links a {
+        padding-bottom: 20px;
+        color: black;
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+    }
 }

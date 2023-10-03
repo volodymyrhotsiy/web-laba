@@ -1,5 +1,4 @@
 .third-page {
-    width: 1000px;
     height: 311;
     background: #26353B;
 }
@@ -25,11 +24,16 @@
 .third-page-division-right,
 .third-page-division-left-text {
     display: inline-block;
-    width: 380px;
     height: 120px;
     font-size: 14px;
     color: var(--greys-white, #FFF);
     font-weight: 400;
     line-height: 24px;
     opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .third-page-division-right {
+        display: none;
+    }
 }

@@ -3,7 +3,6 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: white;
-    background-color: black;
 }
 
 p {
@@ -16,7 +15,15 @@ p {
     max-width: 803px;
 }
 
-.center-website {
-    width: 1000px;
-    margin: 0 auto;
+
+@media screen and (max-width: 1024px) {
+    .main-section {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
 }
